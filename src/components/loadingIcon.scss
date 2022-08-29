@@ -1,0 +1,10 @@
+@media only screen and (max-height: 500px),
+(max-width: 900px) {
+    .loading-text-login{
+        color: lightblue;
+    }
+}
+
+.loading-text-login-bold{
+    color: red !important;
+}

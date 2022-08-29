@@ -1,0 +1,10 @@
+@media only screen and (max-height: 630px),
+(max-width: 900px) {
+    .img-login-header{
+        display: none;
+    }
+}
+.img-login-header {
+    width: 70px;
+    height: 70px;
+}

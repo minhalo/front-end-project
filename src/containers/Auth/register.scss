@@ -1,0 +1,104 @@
+@media only screen and (max-height: 450px),
+(max-width: 265px) {
+    .container_for_register {
+        background-image: none !important;
+    
+    .container_child_for_register {
+        display: none !important;
+    }
+    .display-out-login {
+        height: 100vh;
+        display: flex !important;
+    }
+}
+
+}
+.container_for_register {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right, #ee9ca7 , #ffdde1);
+
+    .display-out-login {
+        display: none;
+    }
+
+    .container_child_for_register {
+        background-color: white;
+        width: 320px;
+        border-radius: 2.5px;
+        min-height: 420px;
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+        .container_child_for_div_reg{
+            width: 250px;
+
+            .form-input-register-username:focus{
+                text-decoration: none;
+                border: white !important;
+            }
+
+            .form-input-register-register:focus{
+                text-decoration: none;
+                border: white !important;
+            }
+
+            .text-register-error{
+                font-size: 12px;
+                color: red;
+                font-style: italic;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/* CSS */
+.button-50 {
+    width: 100px;
+    height: 30px;
+    appearance: button;
+    background-color: pink;
+    background-image: none;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    font-family: ITCAvantGardeStd-Bk, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    // padding: 12px 40px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.button-50:focus {
+    text-decoration: none;
+}
+
+.button-50:hover {
+    text-decoration: none;
+}
+
+.button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+}
+
+.button-50:not([disabled]):active {
+    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+}

@@ -1,0 +1,420 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+
+@media only screen and (max-height: 630px),
+(max-width: 900px) {
+	.background_for-Login {
+		background-image: url(../../assets/images/Dark.png);
+		
+
+		.video-login {
+			display: none;
+		}
+
+		.Background_image_login {
+			display: none !important;
+			transition-timing-function: ease-in-out;
+		}
+
+		.container-right-login {
+			background-color: transparent !important;
+
+			::-webkit-scrollbar {
+				width: 0;
+				background: transparent;
+			}
+
+			width: 100%;
+			transition-timing-function: ease-in-out;
+
+			.Login_header {
+				color: lightblue;
+			}
+
+			.text_for_advice_login {
+				color: lightblue !important;
+			}
+
+			.block-container {
+				background-color: black;
+				.fa-comments {
+					color: lightblue;
+				}
+
+				.text_for_change_password {
+					color: lightseagreen !important;
+					font-style: normal;
+				}
+
+				.text_for_connect_to_admin {
+					color: lightseagreen;
+					font-style: normal;
+				}
+
+				.username-label-login {
+					color: lightblue;
+				}
+
+				.password-label-login {
+					color: lightblue;
+				}
+			}
+		}
+	}
+
+	.button-49,
+	.button-49:after {
+		background: linear-gradient(0deg, transparent, blue 5%) !important;
+		box-shadow: 6px 0px 0px #00E6F6 !important;
+	}
+
+	.button-49:hover:after {
+		animation: none !important;
+		animation-timing-function: none !important;
+	}
+}
+
+@media only screen and (max-height: 450px),
+(max-width: 265px) {
+	.background_for-Login {
+		background-image: none;
+
+		.Background_image_login {
+			display: none !important;
+			transition-timing-function: ease-in-out;
+		}
+
+		.container-right-login {
+			display: none !important;
+			transition-timing-function: ease-in-out;
+		}
+
+		.display-out-login {
+			height: 100vh;
+			display: flex !important;
+		}
+	}
+}
+
+.display-out-login {
+	display: none;
+}
+
+.Background_image_login {
+	display: block;
+	width: 50vw;
+	height: 100vh;
+}
+
+.container-right-login {
+	
+	background-color: #fffcf4;
+	height: 100vh;
+
+	.block-container {
+		background-color: white;
+		box-shadow: 0 4px 8px 0 orchid, 0 6px 20px 0 lightblue, 0 12px 25px 0 orange, 0 25px 50px 0 sandybrown;
+		border-radius: 5px 5px;
+		padding: 1vw 2vw 2vw 2vw;
+
+		.chatbot-to-login {
+			cursor: pointer;
+			position: fixed;
+			bottom: 0;
+			right: 0.5vw;
+			width: 200px;
+			transition: height 2s;
+			transition-timing-function: ease-in-out;
+			border-top-left-radius: 2.5px;
+			border-top-right-radius: 2.5px;
+			box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+
+
+			.header-chatbox-login {
+				background-color: antiquewhite;
+				height: 3.5vh;
+				border-bottom: 1px solid gray;
+			}
+
+			.chat-for-chatbox-input {
+				height: 27px;
+				background-color: #BEBEBE;
+
+				.container-for-input-login {
+					border: 1px solid gray;
+					background-color: #D3D3D3;
+					height: 20px;
+					width: 180px;
+					border-radius: 10px;
+
+					.input-login-chatbox {
+						height: 18px;
+						background-color: #D3D3D3;
+						outline: none;
+						border: none;
+						font-size: 12px;
+					}
+				}
+
+
+			}
+
+			.chat-for-chatbox-input:hover {
+				background-color: white;
+
+				.container-for-input-login {
+					background-color: white;
+
+					.input-login-chatbox {
+						background-color: white;
+					}
+				}
+			}
+
+			.working-on {
+				position: absolute;
+				color: black;
+				top: 50%;
+				left: 32%;
+				animation: cssAnimation 0s 2s forwards;
+				visibility: hidden;
+			}
+
+			@keyframes cssAnimation {
+				to {
+					visibility: visible;
+				}
+			}
+
+			.chatbox-login-chatbot {
+				overflow: scroll;
+				scroll-behavior: smooth;
+				overflow-x: hidden;
+				height: 150px;
+				opacity: 0.3;
+				filter: alpha(opacity=50);
+				background-color: #D8BFD8;
+
+
+
+				.orange-message-login {
+					position: relative;
+					min-width: 30px;
+					max-width: 150px;
+					min-height: 30px;
+					border-radius: 5px;
+					margin-left: 2px;
+					margin-top: 2px;
+					word-wrap: break-word;
+					background-color: #f8e896;
+					text-align: left;
+
+					.chat-orange-login {
+						min-width: 30px;
+						padding: 10px;
+						font: 400 .9em 'Open Sans', sans-serif;
+						font-size: 15px;
+					}
+				}
+
+				.blue-message-login {
+					min-width: 30px;
+					max-width: 150px;
+					min-height: 30px;
+					border-radius: 5px;
+					margin-top: 2px;
+					word-wrap: break-word;
+					background-color: #A8DDFD;
+					text-align: left;
+					margin-right: 2px;
+					margin-left: auto;
+					margin-right: 2px;
+
+					.chat-blue-login {
+						min-width: 30px;
+						padding: 10px;
+						font: 400 .9em 'Open Sans', sans-serif;
+						font-size: 15px;
+					}
+				}
+
+			}
+		}
+
+		.form-container-login {
+			padding-top: 1vw;
+
+			.text-login-error{
+                font-size: 12px;
+                color: red;
+                font-style: italic;
+            }
+
+			.span-eye {
+				cursor: pointer;
+			}
+		}
+
+		.text_for_change_password {
+			font-size: 12px;
+			font-weight: bold;
+			font-style: normal;
+			color: #7F8C8D;
+			cursor: pointer;
+			text-decoration: underline;
+		}
+
+		.text_for_change_create_account {
+			font-size: 12px;
+			padding-top: 0.5vh;
+			font-weight: bold;
+			font-style: normal;
+			color: #7F8C8D;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		.text_for_connect_to_admin {
+			font-weight: bold;
+			color: lightsalmon;
+			font-style: normal;
+			cursor: pointer;
+		}
+	}
+}
+
+
+
+
+///////
+.button-49,
+.button-49:after {
+	width: 150px;
+	height: 76px;
+	line-height: 78px;
+	font-size: 15px;
+	font-family: 'Bebas Neue', sans-serif;
+	background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+	border: 0;
+	color: #fff;
+	letter-spacing: 3px;
+	box-shadow: 6px 0px 0px pink;
+	outline: transparent;
+	position: relative;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+}
+
+.button-49:after {
+	--slice-0: inset(50% 50% 50% 50%);
+	--slice-1: inset(80% -6px 0 0);
+	--slice-2: inset(50% -6px 30% 0);
+	--slice-3: inset(10% -6px 85% 0);
+	--slice-4: inset(40% -6px 43% 0);
+	--slice-5: inset(80% -6px 5% 0);
+
+	content: 'ALTERNATE TEXT';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+	text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+	clip-path: var(--slice-0);
+}
+
+.button-49:hover:after {
+	animation: 1s glitch;
+	animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+	0% {
+		clip-path: var(--slice-1);
+		transform: translate(-20px, -10px);
+	}
+
+	10% {
+		clip-path: var(--slice-3);
+		transform: translate(10px, 10px);
+	}
+
+	20% {
+		clip-path: var(--slice-1);
+		transform: translate(-10px, 10px);
+	}
+
+	30% {
+		clip-path: var(--slice-3);
+		transform: translate(0px, 5px);
+	}
+
+	40% {
+		clip-path: var(--slice-2);
+		transform: translate(-5px, 0px);
+	}
+
+	50% {
+		clip-path: var(--slice-3);
+		transform: translate(5px, 0px);
+	}
+
+	60% {
+		clip-path: var(--slice-4);
+		transform: translate(5px, 10px);
+	}
+
+	70% {
+		clip-path: var(--slice-2);
+		transform: translate(-10px, 10px);
+	}
+
+	80% {
+		clip-path: var(--slice-5);
+		transform: translate(20px, -10px);
+	}
+
+	90% {
+		clip-path: var(--slice-1);
+		transform: translate(-10px, 0px);
+	}
+
+	100% {
+		clip-path: var(--slice-1);
+		transform: translate(0);
+	}
+}
+
+@media (min-width: 265px) {
+
+	.button-49,
+	.button-49:after {
+		width: 100px;
+		height: 30px;
+		line-height: 20px;
+	}
+}
+
+
+////scrollbar custom
+::-webkit-scrollbar {
+	width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #D8BFD8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
